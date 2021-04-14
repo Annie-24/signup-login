@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block body %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+  </head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="text-light display-4 mt-5" style="font-size:80px;">This is a test about a SignUp and a Login. Enjoy it! ;)</h1>
+
+      </div>
+      <div class="col-md-4">
+         <div class="card">
+           <div class="card-body">
+             <form action="" method="POST" class="form">
+              <label>Name</label>
+              <input type="text" name="name" class="form-control" placeholder="name" required><br>
+               <label>Email</label>
+               <input type="email" name="email" class="form-control" placeholder="email" required><br>
+               <label>Password</label><br>
+               <input type="password" name="password" class="form-control" placeholder="password" required><br>
+               <label>Confirm password</label><br>
+               <input type="password" name="password" class="form-control" placeholder="confirm password" required><br><br>
+               <input type="submit" class="btn btn-primary btn-block btn-lg" value="SignUp"><br><br>
+             </form>
+             <p>Already a member? <a href="/login">Login Here</a></p>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
